@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Privacy Policy — Cat Tap Hunt: Kitty Game</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(145deg, #fdf8f2 0%, #f2e9e0 100%);
+      color: #2e241f;
+      line-height: 1.55;
+      scroll-behavior: smooth;
+    }
+
+    /* header styling — playful cat / game vibe */
+    .hero {
+      background: linear-gradient(112deg, #2b1e12 0%, #3f2c1b 100%);
+      border-bottom: 4px solid #ffa726;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      box-shadow: 0 12px 20px -12px rgba(0,0,0,0.35);
+    }
+
+    .hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .hero-icon {
+      background: #ffa72620;
+      border-radius: 60px;
+      padding: 12px;
+      backdrop-filter: blur(2px);
+    }
+
+    .hero-icon svg {
+      width: 56px;
+      height: 56px;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+    }
+
+    .hero h1 {
+      font-size: 2.3rem;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      background: linear-gradient(135deg, #ffffff, #ffd9a3);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    }
+
+    .hero p {
+      color: #f0dbc0;
+      margin-top: 0.5rem;
+      font-weight: 500;
+    }
+
+    .badge {
+      background: #ffa726;
+      color: #2b1e12;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.2rem 0.8rem;
+      border-radius: 30px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    /* main container */
+    .container {
+      max-width: 1280px;
+      margin: 2.5rem auto;
+      padding: 0 24px;
+    }
+
+    .policy-card {
+      background: #ffffff;
+      border-radius: 32px;
+      box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      backdrop-filter: blur(0px);
+      transition: all 0.2s ease;
+    }
+
+    .policy-inner {
+      padding: 2.2rem 2rem;
+    }
+
+    /* effective & intro */
+    .effective-box {
+      background: #fef8f0;
+      border-left: 6px solid #ffa726;
+      padding: 1.2rem 1.6rem;
+      border-radius: 20px;
+      margin-bottom: 2rem;
+      font-weight: 500;
+      color: #3e2d1b;
+    }
+
+    h2 {
+      font-size: 1.7rem;
+      font-weight: 700;
+      margin: 1.8rem 0 0.8rem 0;
+      color: #3b2a1a;
+      border-bottom: 2px solid #f0e4d6;
+      padding-bottom: 0.4rem;
+      display: inline-block;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 1.5rem 0 0.5rem 0;
+      color: #5d4037;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    p, li {
+      color: #3d2e24;
+      margin-bottom: 0.65rem;
+    }
+
+    .data-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+
+    .data-card {
+      background: #fdfaf7;
+      border-radius: 20px;
+      padding: 1rem 1.3rem;
+      flex: 1 1 220px;
+      border: 1px solid #efe3d8;
+    }
+
+    .data-card strong {
+      color: #b45f1b;
+      display: block;
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+
+    ul, .list-styled {
+      padding-left: 1.6rem;
+      margin: 0.8rem 0;
+    }
+
+    li {
+      margin: 0.4rem 0;
+    }
+
+    .tech-badge {
+      background: #f5ede5;
+      display: inline-block;
+      padding: 0.2rem 0.9rem;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin: 0.2rem 0.4rem 0.2rem 0;
+      color: #5d3b1e;
+    }
+
+    .contact-block {
+      background: #fbf6f0;
+      border-radius: 24px;
+      padding: 1.5rem;
+      margin: 2rem 0 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1.2rem;
+    }
+
+    .developer {
+      background: white;
+      border-radius: 20px;
+      padding: 0.8rem 1.2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+      border: 1px solid #f0e2d4;
+    }
+
+    footer {
+      background: #1f140e;
+      color: #d9c7b4;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 2.5rem;
+      font-size: 0.85rem;
+      border-top: 3px solid #ffa726;
+    }
+
+    footer a {
+      color: #ffc285;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a {
+      color: #e68a2e;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #c26d1a;
+    }
+
+    hr {
+      margin: 1.5rem 0;
+      border: 0;
+      height: 1px;
+      background: linear-gradient(to right, #e0d3c6, transparent);
+    }
+
+    @media (max-width: 700px) {
+      .policy-inner {
+        padding: 1.5rem;
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
+      .hero h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="hero-inner">
+      <div class="hero-icon">
+        <!-- Paw print / cat icon -->
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 12C14.2091 12 16 10.2091 16 8C16 5.79086 14.2091 4 12 4C9.79086 4 8 5.79086 8 8C8 10.2091 9.79086 12 12 12Z" stroke="#FFA726" stroke-width="1.7" stroke-linecap="round"/>
+          <path d="M7 13.5C5.5 14.5 4 16 4 18C4 19.5 5 20.5 6.5 20.5C7.5 20.5 8.5 20 9.5 19.5" stroke="#FFA726" stroke-width="1.7" stroke-linecap="round"/>
+          <path d="M17 13.5C18.5 14.5 20 16 20 18C20 19.5 19 20.5 17.5 20.5C16.5 20.5 15.5 20 14.5 19.5" stroke="#FFA726" stroke-width="1.7" stroke-linecap="round"/>
+          <circle cx="12" cy="17" r="3" stroke="#FFA726" stroke-width="1.7"/>
+          <circle cx="9" cy="15" r="1" fill="#FFA726"/>
+          <circle cx="15" cy="15" r="1" fill="#FFA726"/>
+        </svg>
+      </div>
+      <div>
+        <h1>Cat Tap Hunt: Kitty Game · Privacy Policy</h1>
+        <p>Interactive hunting fun for your cat — play, record, and share safely.</p>
+        <div class="badge">🐾 Built with love for cats & their humans</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="policy-card">
+      <div class="policy-inner">
+        <div class="effective-box">
+          📅 <strong>Effective Date:</strong> May 2, 2026<br>
+          📱 <strong>App version:</strong> 1.0+ | Flutter (Android & iOS)<br>
+          🐱 <strong>Last updated:</strong> May 2, 2026
+        </div>
+
+        <p><strong>Cat Tap Hunt: Kitty Game</strong> (developed by <strong>P.V. Nimantha Madhushan</strong> & <strong>P.V. Ruwantha Madhushan</strong>) is a playful hunting simulation designed to entertain and engage your cat. This Privacy Policy explains how we handle information when you use our app. By playing Cat Tap Hunt, you agree to the practices described below.</p>
+
+        <!-- 1. Information we collect -->
+        <h2>📋 1. Information We Collect</h2>
+        <p>Cat Tap Hunt is designed with minimal data collection. We only access what's needed to provide the game and optional video recording features:</p>
+        <div class="data-grid">
+          <div class="data-card"><strong>🎥 Video Recordings</strong> Optional gameplay clips saved locally on your device — never uploaded to our servers.</div>
+          <div class="data-card"><strong>📸 Thumbnails</strong> Generated preview images stored locally alongside your videos for easy browsing.</div>
+          <div class="data-card"><strong>⚙️ Game Settings</strong> Preferences like character size, speed, count, and auto-delete rules — stored locally via Hive.</div>
+          <div class="data-card"><strong>📊 Scores & Stats</strong> Local game scores and session history — kept only on your device.</div>
+        </div>
+        <p>🔹 <strong>We do not collect personal information</strong> such as your name, email, phone number, or precise location. No account creation is required.</p>
+
+        <h2>📲 2. Device Permissions Required</h2>
+        <ul>
+          <li><strong>Camera & Microphone</strong> — only if you enable the optional "Record while playing" feature to capture your cat's hunting moments.</li>
+          <li><strong>Storage / Files</strong> — to save and manage recorded video clips and thumbnails on your device.</li>
+          <li><strong>Vibration</strong> — to provide haptic feedback when your cat catches prey (can be disabled in settings).</li>
+          <li><strong>Internet</strong> — not required for core gameplay; only used if you choose to share videos via external apps.</li>
+        </ul>
+        <p>You can revoke any permission at any time from your device settings. Disabling camera/mic will turn off recording but the game will still work perfectly.</p>
+
+        <h2>⚙️ 3. Third-Party Services & Technologies</h2>
+        <p>Cat Tap Hunt uses the following trusted technologies:</p>
+        <div>
+          <span class="tech-badge">Hive (local storage)</span> — stores game settings, scores, and video metadata locally on your device. No cloud sync.
+          <span class="tech-badge">video_thumbnail</span> — generates thumbnail previews of recorded clips entirely on-device.
+          <span class="tech-badge">Share Plus</span> — enables sharing your cat's hunting videos to WhatsApp, Instagram, Facebook, or other apps you choose.
+          <span class="tech-badge">Flame Engine</span> — powers the smooth animations and gameplay; no data collection.
+        </div>
+        <p>🔹 <strong>No advertising networks, analytics SDKs, or data brokers are integrated.</strong> Your cat's privacy (and yours) is fully respected.</p>
+
+        <h2>🎯 4. How We Use Your Information</h2>
+        <ul>
+          <li>✓ Provide the core hunting game experience for your cat.</li>
+          <li>✓ Optionally record and store gameplay videos locally for you to enjoy and share.</li>
+          <li>✓ Remember your custom settings (speed, size, prey count, auto-delete preferences).</li>
+          <li>✓ Track scores locally so you can see your cat's progress.</li>
+          <li>✓ We <strong>do not sell, rent, or trade</strong> any data — there's simply nothing to sell.</li>
+        </ul>
+
+        <h2>🔒 5. Data Storage & Security</h2>
+        <p>Your data stays on your device. Here's how we keep it safe:</p>
+        <ul>
+          <li><strong>Local-only storage:</strong> All videos, thumbnails, scores, and settings are stored inside the app's private directory using Hive. Other apps cannot access them.</li>
+          <li><strong>No cloud uploads:</strong> We do not transmit your videos, gameplay data, or any personal information to external servers.</li>
+          <li><strong>You control deletion:</strong> Delete individual clips, entire sessions, or all recordings at any time from the Video tab. Auto-delete can also be enabled (1–30 days retention).</li>
+          <li><strong>Uninstalling the app</strong> removes all locally stored data permanently.</li>
+        </ul>
+
+        <h2>👥 6. User Rights & Control</h2>
+        <p>You have complete control over your data:</p>
+        <ul>
+          <li><strong>Access:</strong> All your recordings and settings are visible directly in the app.</li>
+          <li><strong>Deletion:</strong> Delete any video, session, or all recordings instantly from the Video screen.</li>
+          <li><strong>Auto-delete:</strong> Set a retention period (1–30 days) to automatically remove old clips.</li>
+          <li><strong>Permission control:</strong> Enable/disable camera, mic, or vibration anytime in your device settings or the app's Settings tab.</li>
+        </ul>
+
+        <h2>🧸 7. Children's Privacy</h2>
+        <p>Cat Tap Hunt is designed for cat owners of all ages, but we do not knowingly collect personal information from children under 13. The app does not require any personal data to function. If you believe a child has provided us with information, please contact us — though we likely have none to delete.</p>
+
+        <h2>📝 8. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy occasionally to reflect new features or legal requirements. When we do, we'll update the "Effective Date" at the top. For significant changes, we may add an in-app notice. Your continued use of Cat Tap Hunt after changes means you accept the updated policy.</p>
+
+        <h2>📬 9. Contact Information & Developer Details</h2>
+        <div class="contact-block">
+          <div>
+            <p style="font-weight: 700; margin-bottom: 0.2rem;">👨‍💻 Software Engineer & Co-Owner</p>
+            <div class="developer"><strong>P.V. Nimantha Madhushan</strong><br>📧 <a href="mailto:01nimantha@gmail.com">01nimantha@gmail.com</a></div>
+          </div>
+          <div>
+            <p style="font-weight: 700; margin-bottom: 0.2rem;">👨‍💻 Software Engineer & Co-Owner</p>
+            <div class="developer"><strong>P.V. Ruwantha Madhushan</strong><br>📧 <a href="mailto:01ruwantha@gmail.com">01ruwantha@gmail.com</a></div>
+          </div>
+        </div>
+        <p>Both developers equally own and maintain Cat Tap Hunt. For any questions, privacy concerns, or data requests, reach out to either of us. We aim to respond within 7 business days.</p>
+
+        <h2>🌐 10. Data Sharing & Compliance</h2>
+        <p><strong>We do not share, sell, or disclose any information to third parties.</strong> Cat Tap Hunt operates entirely on your device with no backend servers, no analytics, and no tracking. Because we don't collect personal data, there's nothing to share. The app complies with applicable privacy laws including GDPR and CCPA principles — you have full control over your locally stored data.</p>
+
+        <hr>
+        <p style="font-size: 0.9rem; text-align: center; background: #fef9ef; border-radius: 28px; padding: 0.8rem;">📄 <strong>Summary</strong> — Cat Tap Hunt respects your privacy completely. All gameplay data, videos, and settings stay on your device. No accounts, no tracking, no data selling. Just pure hunting fun for your cat. 🐾</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div>© 2026 P.V. Nimantha Madhushan & P.V. Ruwantha Madhushan — Cat Tap Hunt: Kitty Game</div>
+    <div style="margin-top: 10px;">📍 Interactive Cat Game · Privacy by Design | Support: <a href="mailto:01nimantha@gmail.com">01nimantha@gmail.com</a> / <a href="mailto:01ruwantha@gmail.com">01ruwantha@gmail.com</a></div>
+    <div style="margin-top: 12px; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
+      <span style="background:#2f221a; padding: 0.2rem 0.9rem; border-radius: 40px;">🔒 Local-only storage</span>
+      <span style="background:#2f221a; padding: 0.2rem 0.9rem; border-radius: 40px;">🎥 On-device video recording</span>
+      <span style="background:#2f221a; padding: 0.2rem 0.9rem; border-radius: 40px;">📤 Share Plus integration</span>
+    </div>
+  </footer>
+</body>
+</html>
